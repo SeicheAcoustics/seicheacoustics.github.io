@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PyRoomStudio - Open-Source Room Acoustics Design</title>
+    <title>Seiche Acoustics</title>
     <style>
         * {
             margin: 0;
@@ -334,10 +334,10 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <img src="assets/Logo_v3_color.svg" alt="PyRoomStudio Logo" class="logo">
+                <img src="assets/logo-text-color.svg" alt="PyRoomStudio Logo" class="logo">
                 <nav>
                     <a href="#home">Home</a>
-                    <a href="https://github.com/ematth/PyRoomStudio" target="_blank">GitHub</a>
+                    <a href="https://github.com/SeicheAcoustics/Seiche" target="_blank">GitHub</a>
                     <a href="https://discord.gg/Q9ZtTcZZvH" target="_blank">Discord</a>
                 </nav>
             </div>
@@ -347,10 +347,10 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
-            <h1>PyRoomStudio</h1>
-            <p>An open-source application for rendering and analyzing acoustical properties of 3D spaces via meshes</p>
+            <h1>Seiche</h1>
+            <p>Seiche (pronounced <i>see-ch</i> or <i>say-ch</i>) is an open-source application for rendering and analyzing acoustical properties of 3D spaces via design meshes.</p>
             <div class="cta-buttons">
-                <a href="https://github.com/ematth/PyRoomStudio" class="btn btn-primary" target="_blank">View on GitHub</a>
+                <a href="https://github.com/SeicheAcoustics/Seiche" class="btn btn-primary" target="_blank">View on GitHub</a>
                 <a href="https://discord.gg/Q9ZtTcZZvH" class="btn btn-secondary" target="_blank">Join Discord</a>
             </div>
         </div>
@@ -360,8 +360,8 @@
     <section>
         <div class="container">
             <p class="section-intro">
-                PyRoomStudio is a GUI application for rendering and analyzing acoustical properties of 3D spaces via STL meshes. 
-                It is built on top of the <a href="https://github.com/LCAV/pyroomacoustics" target="_blank">PyRoomAcoustics</a>, a library for simulating acoustics algorithms.
+                Seiche is an open-source application for rendering and analyzing acoustical properties of 3D spaces. 
+                It was inspired by <a href="https://github.com/LCAV/pyroomacoustics" target="_blank">PyRoomAcoustics</a>, a library for simulating acoustics algorithms.
             </p>
         </div>
     </section>
@@ -372,54 +372,14 @@
             <h2>Mission Statement</h2>
             <div class="mission-content">
                 <div class="mission-text">
-                    <p style="font-size: 1.1rem; margin-bottom: 20px;">PyRoomStudio has two missions:</p>
+                    <p style="font-size: 1.1rem; margin-bottom: 20px;">Seiche has two missions:</p>
                     <ol>
                         <li>Make room acoustics design accessible and intuitive for designers via open-source software.</li>
                         <li>Connect people passionate about designing for the auditory sense, from both the technical and the creative sides.</li>
                     </ol>
                     <p style="font-size: 1.1rem; margin-top: 30px;">By accomplishing these missions, we hope to increase the usage of acoustic tools in the design community and make light of sound as a necessary consideration for future spaces.</p>
                 </div>
-                <img src="assets/readme-image.png" alt="PyRoomStudio Mission" class="mission-image">
-            </div>
-        </div>
-    </section>
-
-    <!-- Setup Section -->
-    <section id="setup">
-        <div class="container">
-            <h2>Setup</h2>
-            <p class="section-intro">PyRoomStudio is currently running on Python 3.9+. Make sure to have one of these versions installed before downloading and running the application.</p>
-            
-            <div class="setup-steps">
-                <div class="setup-step">
-                    <h3>1. Clone the repository</h3>
-                    <div class="code-block">
-                        <code>$ git clone https://github.com/pyroomstudio/PyRoomStudio.git</code>
-                    </div>
-                </div>
-
-                <div class="setup-step">
-                    <h3>2. Setup your virtual environment (venv) and install necessary packages</h3>
-                    <h4>Linux/macOS:</h4>
-                    <div class="code-block">
-                        <code>$ python3 -m venv venv
-$ source venv/bin/activate
-(venv) $ pip install -r requirements.txt</code>
-                    </div>
-                    <h4>Windows:</h4>
-                    <div class="code-block">
-                        <code>$ python3 -m venv venv
-$ source venv/Scripts/Activate
-(venv) $ pip install -r requirements.txt</code>
-                    </div>
-                </div>
-
-                <div class="setup-step">
-                    <h3>3. Open the software</h3>
-                    <div class="code-block">
-                        <code>$ python3 main_gui.py</code>
-                    </div>
-                </div>
+                <img src="assets/readme-image.png" alt="Seiche Mission" class="mission-image">
             </div>
         </div>
     </section>
@@ -428,7 +388,7 @@ $ source venv/Scripts/Activate
     <section>
         <div class="container">
             <div class="screenshot-container">
-                <img src="assets/screenshot.png" alt="PyRoomStudio Screenshot" class="screenshot">
+                <img src="assets/screenshot.png" alt="Seiche Screenshot" class="screenshot">
             </div>
         </div>
     </section>
@@ -438,15 +398,12 @@ $ source venv/Scripts/Activate
         <div class="container">
             <h2>Get Involved & Contributing</h2>
             <div class="contributing-content">
-                <img src="assets/contributing-image.png" alt="Contributing to PyRoomStudio" class="contributing-image">
+                <img src="assets/contributing-image.png" alt="Contributing to Seiche" class="contributing-image">
                 <div class="contributing-text">
                     <p>We are always accepting external contributions! We're looking for users who are interested in contributing code (GUI and app functionality) and/or material coefficients (for a public database).</p>
                     
                     <h3>Issues</h3>
                     <p>The Issues tab on GitHub contains a running list of features to implement, as well as any bugs or problems that arise from development. For further details and discussions, please join our Discord server.</p>
-                    
-                    <h3>Development Environment</h3>
-                    <p>Environment libraries are provided in <code>requirements.txt</code> and consist of minimal tools needed to build the running simulation: PyGame, PyOpenGL, PyRoomAcoustics, and their required libraries.</p>
                     
                     <h3>Materials Database</h3>
                     <p>We're also looking to expand our project into an open-source database of material coefficients. In the future, we want users to be able to drag-and-drop materials on different surfaces to improve the simulation process.</p>
@@ -461,13 +418,13 @@ $ source venv/Scripts/Activate
             <h3><font color="white">Contacts</font></h3>
             <div class="contacts">
                 <p><strong>William (Zhiwen) Chen</strong> - <a href="mailto:willc@illinois.edu">willc@illinois.edu</a><br><em>Co-Founder & Designer</em></p>
-                <p><strong>Evan M. Matthews</strong> - <a href="mailto:evanmm3@illinois.edu">evanmm3@illinois.edu</a> - <a href="https://ematth.dev" target="_blank">https://ematth.dev</a><br><em>Co-Founder & Programmer</em></p>
+                <p><strong>Evan M. Matthews</strong> - <a href="mailto:ematth1@outlook.com">ematth1@outlook.com</a> - <a href="https://ematth.dev" target="_blank">https://ematth.dev</a><br><em>Co-Founder & Programmer</em></p>
             </div>
             <p style="margin-top: 30px;">
-                <a href="https://github.com/ematth/PyRoomStudio" target="_blank">GitHub</a> | 
+                <a href="https://github.com/SeicheAcoustics/Seiche" target="_blank">GitHub</a> | 
                 <a href="https://discord.gg/Q9ZtTcZZvH" target="_blank">Discord</a>
             </p>
-            <p style="margin-top: 20px; color: #95a5a6;">&copy; 2025 PyRoomStudio. Open-source under the MIT License.</p>
+            <p style="margin-top: 20px; color: #95a5a6;">&copy; 2026 Seiche Acoustics. Open-source under the MIT License.</p>
         </div>
     </footer>
 </body>
